@@ -1,3 +1,24 @@
+---
+
+## 📸 Application Screenshots
+
+### 🔐 Login Page
+Secure login page for Admin and Employee authentication.
+
+<img width="1895" height="853" alt="Screenshot 2026-09-09 163703" src="https://github.com/user-attachments/assets/d806afd3-beb4-45cb-bb09-fe218776989a" />
+
+### 🧑‍💼 Admin Dashboard
+Admin dashboard for managing employees, passports, and monitoring passport expiry.
+
+<img width="1917" height="862" alt="Screenshot 2026-09-09 163742" src="https://github.com/user-attachments/assets/4058f0ac-a78a-4f2e-8888-6385d66cc630" />
+
+### 👤 Employee Dashboard
+Employee dashboard providing access to personal profile and passport information.
+
+<img width="1916" height="852" alt="Screenshot 2026-09-09 163835" src="https://github.com/user-attachments/assets/133b802d-5b6c-4ba3-b9cb-8e08075018e2" />
+
+---
+
 # Employee Passport Management System
 
 A full-stack **Employee Passport Management System** developed using **Java, Spring Boot, Spring Security, Spring Data JPA, MySQL, HTML, CSS, and JavaScript**.
