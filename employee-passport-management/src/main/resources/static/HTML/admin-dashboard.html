@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>Employee Passport</h2>
+
+        <a href="admin-dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="employees.html">
+            Employees
+        </a>
+
+        <a href="passports.html">
+            Passports
+        </a>
+
+        <a href="expiring.html">
+            Expiring Passports
+        </a>
+
+        <button type="button" id="logoutBtn">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Admin Dashboard</h1>
+
+                <p>
+                    Employee Passport Management System
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <h3>Total Employees</h3>
+
+                <h2 id="employeeCount">
+                    0
+                </h2>
+
+                <p>
+                    Total employee records
+                </p>
+
+                <a href="employees.html">
+                    Manage Employees
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Total Passports</h3>
+
+                <h2 id="passportCount">
+                    0
+                </h2>
+
+                <p>
+                    Total passport records
+                </p>
+
+                <a href="passports.html">
+                    Manage Passports
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>Expiring Passports</h3>
+
+                <h2 id="expiringCount">
+                    0
+                </h2>
+
+                <p>
+                    Expiring within next 30 days
+                </p>
+
+                <a href="expiring.html">
+                    Check Expiry
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p id="adminMessage"></p>
+
+    </main>
+
+</div>
+
+
+<script src="../JAVASCRIPT/admin-dashboard.js"></script>
+
+</body>
+
+</html>

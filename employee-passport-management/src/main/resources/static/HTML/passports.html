@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passport Management</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>Employee Passport</h2>
+
+        <a href="admin-dashboard.html">Dashboard</a>
+
+        <a href="employees.html">Employees</a>
+
+        <a href="passports.html" class="active">Passports</a>
+
+        <a href="expiring.html">Expiring Passports</a>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Passport Management</h1>
+                <p>Manage employee passport records</p>
+            </div>
+
+        </div>
+
+
+        <div class="employee-actions">
+
+            <button id="addPassportBtn">
+                + Add Passport
+            </button>
+
+        </div>
+
+
+
+        <div class="employee-form" id="passportForm">
+
+            <h2>Add Passport</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Passport Number</label>
+                    <input
+                        type="text"
+                        id="passportNo"
+                        placeholder="Enter passport number">
+                </div>
+
+                <div class="form-group">
+                    <label>Employee ID</label>
+                    <input
+                        type="number"
+                        id="passportEmployeeId"
+                        placeholder="Enter employee ID">
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Issue Date</label>
+                    <input
+                        type="date"
+                        id="issueDate">
+                </div>
+
+                <div class="form-group">
+                    <label>Expiry Date</label>
+                    <input
+                        type="date"
+                        id="expiryDate">
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Nationality</label>
+
+                <input
+                    type="text"
+                    id="nationality"
+                    placeholder="Enter nationality">
+
+            </div>
+
+
+            <div class="form-buttons">
+
+                <button type="button" id="savePassportBtn">
+                    Save Passport
+                </button>
+
+                <button type="button" id="cancelPassportBtn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Passport No</th>
+                        <th>Issue Date</th>
+                        <th>Expiry Date</th>
+                        <th>Nationality</th>
+                        <th>Employee ID</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="passportTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="passportMessage"></p>
+
+    </main>
+
+</div>
+
+
+<script src="../JAVASCRIPT/passports.js"></script>
+
+</body>
+
+</html>

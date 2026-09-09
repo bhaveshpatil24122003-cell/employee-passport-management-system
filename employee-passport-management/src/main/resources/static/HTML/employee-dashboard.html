@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>Employee Passport</h2>
+
+        <a href="employee-dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="my-profile.html">
+            My Profile
+        </a>
+
+        <a href="my-passport.html">
+            My Passport
+        </a>
+
+        <button type="button" id="logoutBtn">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1 id="welcomeMessage">
+                    Employee Dashboard
+                </h1>
+
+                <p id="employeeDepartment">
+                    Welcome to Employee Passport Management System
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <h3>My Profile</h3>
+
+                <p>
+                    View and update your personal employee details.
+                </p>
+
+                <a href="my-profile.html">
+                    View Profile
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <h3>My Passport</h3>
+
+                <p>
+                    View and update your passport information.
+                </p>
+
+                <a href="my-passport.html">
+                    View Passport
+                </a>
+
+            </div>
+
+        </div>
+
+        <p id="dashboardMessage"></p>
+
+    </main>
+
+</div>
+
+<script src="../JAVASCRIPT/employee-dashboard.js"></script>
+
+</body>
+
+</html>

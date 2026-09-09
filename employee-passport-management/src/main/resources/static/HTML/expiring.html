@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expiring Passports</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>Employee Passport</h2>
+
+        <a href="admin-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="employees.html">
+            Employees
+        </a>
+
+        <a href="passports.html">
+            Passports
+        </a>
+
+        <a href="expiring.html" class="active">
+            Expiring Passports
+        </a>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Expiring Passports</h1>
+                <p>Passports expiring within the next 30 days</p>
+            </div>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Passport ID</th>
+                        <th>Passport No</th>
+                        <th>Issue Date</th>
+                        <th>Expiry Date</th>
+                        <th>Nationality</th>
+                        <th>Employee ID</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="expiringTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p id="expiringMessage"></p>
+
+    </main>
+
+</div>
+
+
+<script src="../JAVASCRIPT/expiring.js"></script>
+
+</body>
+
+</html>

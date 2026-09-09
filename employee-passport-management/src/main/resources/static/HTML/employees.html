@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+   
+    <aside class="sidebar">
+
+        <h2>Employee Passport</h2>
+
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="employees.html" class="active">Employees</a>
+        <a href="passports.html">Passports</a>
+        <a href="expiring.html">Expiring Passports</a>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Employee Management</h1>
+                <p>Manage employee records</p>
+            </div>
+
+        </div>
+
+
+        <div class="employee-actions">
+
+            <button id="addEmployeeBtn">
+                + Add Employee
+            </button>
+
+        </div>  
+		
+		<!-- Add Employee Form -->
+		<div class="employee-form" id="employeeForm">
+
+		    <h2>Add New Employee</h2>
+
+		    <div class="form-row">
+
+		        <div class="form-group">
+		            <label>Name</label>
+		            <input type="text" id="employeeName"
+		                   placeholder="Enter employee name">
+		        </div>
+
+		        <div class="form-group">
+		            <label>Email</label>
+		            <input type="email" id="employeeEmail"
+		                   placeholder="Enter employee email">
+		        </div>
+
+		    </div>
+
+		    <div class="form-row">
+
+		        <div class="form-group">
+		            <label>Contact Number</label>
+		            <input type="text" id="employeeContact"
+		                   placeholder="Enter contact number">
+		        </div>
+
+		        <div class="form-group">
+		            <label>Department</label>
+		            <input type="text" id="employeeDepartment"
+		                   placeholder="Enter department">
+		        </div>
+
+		    </div>
+
+		    <div class="form-row">
+
+		        <div class="form-group">
+		            <label>Password</label>
+		            <input type="password" id="employeePassword"
+		                   placeholder="Enter password">
+		        </div>
+
+		        <div class="form-group">
+		            <label>Role</label>
+
+		            <select id="employeeRole">
+		                <option value="EMPLOYEE">Employee</option>
+		                <option value="ADMIN">Admin</option>
+		            </select>
+		        </div>
+
+		    </div>
+
+		    <div class="form-buttons">
+
+		        <button type="button" id="saveEmployeeBtn">
+		            Save Employee
+		        </button>
+
+		        <button type="button" id="cancelEmployeeBtn">
+		            Cancel
+		        </button>
+
+		    </div>
+
+		</div>    
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Department</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="employeeMessage"></p>
+
+    </main>
+
+</div>
+
+<script src="../JAVASCRIPT/employees.js"></script>
+
+</body>
+</html>
