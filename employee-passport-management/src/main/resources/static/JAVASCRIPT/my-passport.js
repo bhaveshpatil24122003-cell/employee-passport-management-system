@@ -7,9 +7,6 @@ const updatePassportBtn = document.getElementById("updatePassportBtn");
 const passportMessage = document.getElementById("passportMessage");
 
 
-// ==========================
-// LOAD MY PASSPORT
-// ==========================
 
 async function loadMyPassport() {
 
@@ -50,9 +47,6 @@ async function loadMyPassport() {
 }
 
 
-// ==========================
-// UPDATE MY PASSPORT
-// ==========================
 
 updatePassportBtn.addEventListener("click", async function () {
 
@@ -113,5 +107,4 @@ updatePassportBtn.addEventListener("click", async function () {
 });
 
 
-// Page open hote hi own passport load
 loadMyPassport();
