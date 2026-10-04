@@ -131,9 +131,13 @@ Two application roles are supported:
 
 ---
 
-## 🗄️ Database Configuration
+## Admin Configuration
 
-Create the MySQL database:
+Admin credentials are supplied through environment variables instead of being hard-coded in the source code.
 
-```sql
-CREATE DATABASE employee_passport_db;
+Required environment variables:
+
+```text
+ADMIN_EMAIL
+ADMIN_PASSWORD
+```
